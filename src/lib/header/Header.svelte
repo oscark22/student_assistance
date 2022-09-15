@@ -16,7 +16,7 @@
 				<a href="/">Home</a>
 			</li>
 			<li class:active={$page.url.pathname === '/dashboard'}>
-				<a href="/dashboard">About</a>
+				<a href="/dashboard">Dashboard</a>
 			</li>
 			<li class:active={$page.url.pathname === '/about'}>
 				<a href="/about">About</a>

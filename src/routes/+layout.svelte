@@ -4,6 +4,6 @@
 
 <Header />
 
-<main>
+<main class="mt-4">
 	<slot />
 </main>
