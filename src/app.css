@@ -1,0 +1,5 @@
+/* global css */
+
+svg:hover {
+    fill: black;
+}
