@@ -14,7 +14,7 @@
     Dashboard
   </h1>
 </div>
-<div class="d-flex px-4 mt-4">
+<div class="d-flex mt-4">
   <table class="table table-striped table-bordered">
     <thead>
       <tr>
