@@ -31,6 +31,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.0",
-		"bootstrap": "^5.2.1"
+		"bootstrap": "^5.2.1",
+		"svelte-modals": "^1.2.0"
 	}
 }
