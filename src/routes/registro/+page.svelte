@@ -34,9 +34,11 @@
 {#if alum}
 	<Alumno />
 {/if}
+
 {#if mat}
 	<Materia />
 {/if}
+
 {#if group}
 	<Grupo />
 {/if}
