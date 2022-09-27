@@ -16,7 +16,7 @@
 		<div class="mt-6 row">
 			<div class="mb-3 col">
 				<label for="materia1" class="form-label">Seleccione una materia: </label>
-				<select class="form-control" aria-label="Default select example" id="materia1">
+				<select class="form-select" aria-label="Default select example" id="materia1">
 					<option selected hidden>Materia</option>
 					<option value="ICC102">Sistemas Operativos</option>
 					<option value="ISW100">Diseño de Software</option>
@@ -33,7 +33,7 @@
 			</div>
 			<div class="mb-3 col">
 				<label for="periodo1" class="form-label">Seleccione un periodo: </label>
-				<select class="form-control" aria-label="Default select example" id="periodo1">
+				<select class="form-select" aria-label="Default select example" id="periodo1">
 					<option selected hidden>Periodo</option>
 					<option value="EneroJunio2022">Enero-Junio(2022)</option>
 					<option value="AgostoDiciembre2022">Agosto-Diciembre(2022)</option>
