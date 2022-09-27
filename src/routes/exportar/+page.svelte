@@ -25,7 +25,7 @@
 			</div>
 			<div class="mb-3 col">
 				<label for="maestro1" class="form-label">Seleccione un maestro: </label>
-				<select class="form-control" aria-label="Default select example" id="maestro1">
+				<select class="form-select" aria-label="Default select example" id="maestro1">
 					<option selected hidden>Maestro</option>
 					<option value="IrmaA">Irma Amaya</option>
 					<option value="CarlosA">Carlos Alemán</option>
