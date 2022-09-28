@@ -18,13 +18,13 @@
       }
     },
     { 
-      name: "Ordinario (20% Faltas)",
+      name: "Ordinario",
       sort: {
         enabled: false
       }
     },
     { 
-      name: "Extraordinario (30% Faltas)",
+      name: "Extraordinario",
       sort: {
         enabled: false
       }
