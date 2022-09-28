@@ -1,4 +1,11 @@
 <script lang="ts">
+  import Grid from "gridjs-svelte"
+
+  const data = [
+    { name: "John", email: "john@example.com" },
+    { name: "Mark", email: "mark@gmail.com" },
+  ]
+
   let groupNum:number = 8;
   let totAbsences:number = 9;
   let threeStudentsMoreAbsences:string[]|null = ["Genovefa Yaakov", "Amlaíb Quirino", "Janina Aslan"];

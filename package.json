@@ -32,6 +32,8 @@
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.0",
 		"bootstrap": "^5.2.1",
+		"gridjs": "^5.1.0",
+		"gridjs-svelte": "^2.1.1",
 		"svelte-modals": "^1.2.0"
 	}
 }
