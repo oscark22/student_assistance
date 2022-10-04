@@ -24,14 +24,6 @@
 				</select>
 			</div>
 			<div class="mb-3 col">
-				<label for="maestro1" class="form-label">Seleccione un maestro: </label>
-				<select class="form-select" aria-label="Default select example" id="maestro1">
-					<option selected hidden>Maestro</option>
-					<option value="IrmaA">Irma Amaya</option>
-					<option value="CarlosA">Carlos Alemán</option>
-				</select>
-			</div>
-			<div class="mb-3 col">
 				<label for="periodo1" class="form-label">Seleccione un periodo: </label>
 				<select class="form-select" aria-label="Default select example" id="periodo1">
 					<option selected hidden>Periodo</option>
@@ -46,17 +38,22 @@
     <table class="table table-striped table-bordered">
       <thead>
         <tr>
+          <th scope="col">Matrícula</th>
           <th scope="col">Nombre</th>
           <th scope="col">Apellido Paterno</th>
           <th scope="col">Apellido Materno</th>
-          <th scope="col">Matrícula</th>
-		  <th scope="col">Asistencias</th>
+		      <th scope="col">Asistencias</th>
           <th scope="col">Inasistencias</th>
         </tr>
       </thead>
       <tbody>
         <!-- TODO each per group -->
         <tr>
+          {#if Array.isArray(alum_matricula)}
+          <td>{alum_matricula[0]}</td>
+          {:else}
+    	    <td>Nothing</td>
+          {/if}
           {#if Array.isArray(alum_nombre)}
             <td>{alum_nombre[0]}</td>
           {:else}
@@ -72,11 +69,7 @@
         {:else}
           <td>Nothing</td>
         {/if}
-        {#if Array.isArray(alum_matricula)}
-        <td>{alum_matricula[0]}</td>
-        {:else}
-    	  <td>Nothing</td>
-        {/if}
+        
 		{#if Array.isArray(asistencias)}
             <td>{asistencias[0]}</td>
           {:else}
@@ -90,6 +83,11 @@
         </tr>
         {#each Array(maxLen-1) as _, i (i)}
           <tr>
+            {#if Array.isArray(alum_matricula) && i+1 < alum_matricula.length}
+            <td>{alum_matricula[i+1]}</td>
+            {:else}
+            <td></td>
+            {/if}
             {#if Array.isArray(alum_nombre) && i+1 < alum_nombre.length}
               <td>{alum_nombre[i+1]}</td>
             {:else}
@@ -105,11 +103,7 @@
             {:else}
             <td></td>
             {/if}
-            {#if Array.isArray(alum_matricula) && i+1 < alum_matricula.length}
-            <td>{alum_matricula[i+1]}</td>
-            {:else}
-            <td></td>
-            {/if}
+
 			{#if Array.isArray(asistencias) && i+1 < asistencias.length}
             <td>{asistencias[i+1]}</td>
             {:else}
